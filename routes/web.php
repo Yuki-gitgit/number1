@@ -13,4 +13,8 @@ use App\Http\Controllers\PostController;
 |
 */
 
+ dev_basis02
 Route::get('/', [PostController::class, 'index']);
+
+Route::get('/', [PostController::class, 'index']);
+ master
