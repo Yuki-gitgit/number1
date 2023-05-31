@@ -6,6 +6,11 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    <x-app-layout>
+        <x-slot name="header">
+            Post index
+        </x-slot>
+    
     <body>
         <h1>Blog Name</h1>
         <a href='/posts/create'>create</a>
@@ -35,5 +40,8 @@
                 }
             }
         </script>
+        <br>
+       <h3>ログインユーザー:{{ Auth::user()->name }}</h3>
     </body>
+    </x-app-layout>
 </html>
